@@ -1,0 +1,705 @@
+﻿**********************
+Inicio de la transcripción de Windows PowerShell
+Hora de inicio: 20260403125614
+Nombre de usuario: LAPTOP-7RA6V8FV\danii
+Usuario RunAs: LAPTOP-7RA6V8FV\danii
+Nombre de la configuración: 
+Máquina: LAPTOP-7RA6V8FV (Microsoft Windows NT 10.0.26200.0)
+Aplicación host: C:\WINDOWS\system32\WindowsPowerShell\v1.0\powershell.exe
+Id. de proceso: 19064
+PSVersion: 5.1.26100.7920
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.26100.7920
+BuildVersion: 10.0.26100.7920
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+La transcripción ha comenzado. El archivo de salida es C:\Users\danii\Documents\PowerShell_transcript.LAPTOP-7RA6V8FV.i+OWPkwG.20260403125614.txt
+PS C:\Users\danii\Documents> pwd
+
+Path
+----
+C:\Users\danii\Documents
+
+
+PS C:\Users\danii\Documents> cd /
+PS C:\> cd Users
+PS C:\Users> pwd
+
+Path
+----
+C:\Users
+
+
+PS C:\Users> cd ..
+PS C:\> cd
+PS C:\> cd Users/danii/Documents
+PS C:\Users\danii\Documents> pwd
+
+Path
+----
+C:\Users\danii\Documents
+
+
+PS C:\Users\danii\Documents> cd
+PS C:\Users\danii\Documents> cd /
+PS C:\> cd /Documents
+cd : No se encuentra la ruta de acceso 'C:\Documents' porque no existe.
+En línea: 1 Carácter: 1
++ cd /Documents
++ ~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (C:\Documents:String) [Set-Location], ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.SetLocationCommand
+cd : No se encuentra la ruta de acceso 'C:\Documents' porque no existe.
+En línea: 1 Carácter: 1
++ cd /Documents
++ ~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (C:\Documents:String) [Set-Location], ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.SetLocationCommand
+
+PS C:\> whoami
+danii
+PS C:\> cd Users/danii/Documents
+PS C:\Users\danii\Documents> cd ~
+PS C:\Users\danii> cd Documents/Ciencia_de_datos
+PS C:\Users\danii\Documents\Ciencia_de_datos> mkdir Tareas
+
+
+    Directorio: C:\Users\danii\Documents\Ciencia_de_datos
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----        03/04/2026     13:06                Tareas
+
+
+PS C:\Users\danii\Documents\Ciencia_de_datos> cd Tareas
+PS C:\Users\danii\Documents\Ciencia_de_datos\Tareas> mkdir Tarea01
+
+
+    Directorio: C:\Users\danii\Documents\Ciencia_de_datos\Tareas
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----        03/04/2026     13:07                Tarea01
+
+
+PS C:\Users\danii\Documents\Ciencia_de_datos\Tareas> mkdir dir1 di2 dir3
+>> ErrorTerminación(mkdir): "No se encuentra ningún parámetro de posición que acepte el argumento 'di2'."
+mkdir : No se encuentra ningún parámetro de posición que acepte el argumento 'di2'.
+En línea: 1 Carácter: 1
++ mkdir dir1 di2 dir3
++ ~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidArgument: (:) [mkdir], ParameterBindingException
+    + FullyQualifiedErrorId : PositionalParameterNotFound,mkdir
+mkdir : No se encuentra ningún parámetro de posición que acepte el argumento 'di2'.
+En línea: 1 Carácter: 1
++ mkdir dir1 di2 dir3
++ ~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidArgument: (:) [mkdir], ParameterBindingException
+    + FullyQualifiedErrorId : PositionalParameterNotFound,mkdir
+
+PS C:\Users\danii\Documents\Ciencia_de_datos\Tareas> cd Tarea01
+PS C:\Users\danii\Documents\Ciencia_de_datos\Tareas\Tarea01> mkdir dir1, dir2, dir3
+
+
+    Directorio: C:\Users\danii\Documents\Ciencia_de_datos\Tareas\Tarea01
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----        03/04/2026     13:08                dir1
+d-----        03/04/2026     13:08                dir2
+d-----        03/04/2026     13:08                dir3
+
+
+PS C:\Users\danii\Documents\Ciencia_de_datos\Tareas\Tarea01> ls 
+
+
+    Directorio: C:\Users\danii\Documents\Ciencia_de_datos\Tareas\Tarea01
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----        03/04/2026     13:08                dir1
+d-----        03/04/2026     13:08                dir2
+d-----        03/04/2026     13:08                dir3
+
+
+PS C:\Users\danii\Documents\Ciencia_de_datos\Tareas\Tarea01> mkdir -p dir4/dir5/dir6
+
+
+    Directorio: C:\Users\danii\Documents\Ciencia_de_datos\Tareas\Tarea01\dir4\dir5
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----        03/04/2026     13:09                dir6
+
+
+PS C:\Users\danii\Documents\Ciencia_de_datos\Tareas\Tarea01> ls
+
+
+    Directorio: C:\Users\danii\Documents\Ciencia_de_datos\Tareas\Tarea01
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----        03/04/2026     13:08                dir1
+d-----        03/04/2026     13:08                dir2
+d-----        03/04/2026     13:08                dir3
+d-----        03/04/2026     13:09                dir4
+
+
+PS C:\Users\danii\Documents\Ciencia_de_datos\Tareas\Tarea01> ls > output.txt
+PS C:\Users\danii\Documents\Ciencia_de_datos\Tareas\Tarea01> EnlaceDeParámetros(Out-File): nombre="InputObject"; valor="dir1"
+>> EnlaceDeParámetros(Out-File): nombre="InputObject"; valor="dir2"
+>> EnlaceDeParámetros(Out-File): nombre="InputObject"; valor="dir3"
+>> EnlaceDeParámetros(Out-File): nombre="InputObject"; valor="dir4"
+>> EnlaceDeParámetros(Out-File): nombre="InputObject"; valor="output.txt"
+PS C:\Users\danii\Documents\Ciencia_de_datos\Tareas\Tarea01> cat output.txt
+
+
+    Directorio: C:\Users\danii\Documents\Ciencia_de_datos\Tareas\Tarea01
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----        03/04/2026     13:08                dir1
+d-----        03/04/2026     13:08                dir2
+d-----        03/04/2026     13:08                dir3
+d-----        03/04/2026     13:09                dir4
+-a----        03/04/2026     13:14              0 output.txt
+
+
+PS C:\Users\danii\Documents\Ciencia_de_datos\Tareas\Tarea01> cat
+>> ErrorTerminación(): "Se ha detenido la canalización."
+>> ErrorTerminación(): "Se ha detenido la canalización."
+PS C:\Users\danii\Documents\Ciencia_de_datos\Tareas\Tarea01> echo "This is a test" > test1.txt
+>> EnlaceDeParámetros(Out-File): nombre="InputObject"; valor="This is a test"
+PS C:\Users\danii\Documents\Ciencia_de_datos\Tareas\Tarea01> cat test1.txt
+This is a test
+PS C:\Users\danii\Documents\Ciencia_de_datos\Tareas\Tarea01> ls
+
+
+    Directorio: C:\Users\danii\Documents\Ciencia_de_datos\Tareas\Tarea01
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----        03/04/2026     13:08                dir1
+d-----        03/04/2026     13:08                dir2
+d-----        03/04/2026     13:08                dir3
+d-----        03/04/2026     13:09                dir4
+-a----        03/04/2026     13:14           1728 output.txt
+-a----        03/04/2026     13:20             34 test1.txt
+
+
+PS C:\Users\danii\Documents\Ciencia_de_datos\Tareas\Tarea01> echo "This is a second test" > test2.txt
+>> EnlaceDeParámetros(Out-File): nombre="InputObject"; valor="This is a second test"
+PS C:\Users\danii\Documents\Ciencia_de_datos\Tareas\Tarea01> echo "This is a third test" > test3.txt
+>> EnlaceDeParámetros(Out-File): nombre="InputObject"; valor="This is a third test"
+PS C:\Users\danii\Documents\Ciencia_de_datos\Tareas\Tarea01> cat test1.txt test2.txt test3.txt
+>> ErrorTerminación(Get-Content): "No se encuentra ningún parámetro de posición que acepte el argumento 'test2.txt'."
+Get-Content : No se encuentra ningún parámetro de posición que acepte el argumento 'test2.txt'.
+En línea: 1 Carácter: 1
++ cat test1.txt test2.txt test3.txt
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidArgument: (:) [Get-Content], ParameterBindingException
+    + FullyQualifiedErrorId : PositionalParameterNotFound,Microsoft.PowerShell.Commands.GetContentCommand
+Get-Content : No se encuentra ningún parámetro de posición que acepte el argumento 'test2.txt'.
+En línea: 1 Carácter: 1
++ cat test1.txt test2.txt test3.txt
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidArgument: (:) [Get-Content], ParameterBindingException
+    + FullyQualifiedErrorId : PositionalParameterNotFound,Microsoft.PowerShell.Commands.GetContentCommand
+
+PS C:\Users\danii\Documents\Ciencia_de_datos\Tareas\Tarea01> cat test1.txt, test2.txt, test3.txt
+This is a test
+This is a second test
+This is a third test
+PS C:\Users\danii\Documents\Ciencia_de_datos\Tareas\Tarea01> cat test?.txt
+This is a test
+This is a second test
+This is a third test
+PS C:\Users\danii\Documents\Ciencia_de_datos\Tareas\Tarea01> cat test*.txt
+This is a test
+This is a second test
+This is a third test
+PS C:\Users\danii\Documents\Ciencia_de_datos\Tareas\Tarea01> cat test_?.txt
+cat : No existe ningún objeto en la ruta de acceso especificada test_?.txt, o bien se ha filtrado por el parámetro 
+-Include o -Exclude.
+En línea: 1 Carácter: 1
++ cat test_?.txt
++ ~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (System.String[]:String[]) [Get-Content], Exception
+    + FullyQualifiedErrorId : ItemNotFound,Microsoft.PowerShell.Commands.GetContentCommand
+cat : No existe ningún objeto en la ruta de acceso especificada test_?.txt, o bien se ha filtrado por el
+parámetro -Include o -Exclude.
+En línea: 1 Carácter: 1
++ cat test_?.txt
++ ~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (System.String[]:String[]) [Get-Content], Exception
+    + FullyQualifiedErrorId : ItemNotFound,Microsoft.PowerShell.Commands.GetContentCommand
+
+PS C:\Users\danii\Documents\Ciencia_de_datos\Tareas\Tarea01> cat test_*
+cat : No existe ningún objeto en la ruta de acceso especificada test_*, o bien se ha filtrado por el parámetro -Include 
+o -Exclude.
+En línea: 1 Carácter: 1
++ cat test_*
++ ~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (System.String[]:String[]) [Get-Content], Exception
+    + FullyQualifiedErrorId : ItemNotFound,Microsoft.PowerShell.Commands.GetContentCommand
+cat : No existe ningún objeto en la ruta de acceso especificada test_*, o bien se ha filtrado por el
+parámetro -Include o -Exclude.
+En línea: 1 Carácter: 1
++ cat test_*
++ ~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (System.String[]:String[]) [Get-Content], Exception
+    + FullyQualifiedErrorId : ItemNotFound,Microsoft.PowerShell.Commands.GetContentCommand
+
+PS C:\Users\danii\Documents\Ciencia_de_datos\Tareas\Tarea01> cat t* > combined.txt
+>> EnlaceDeParámetros(Out-File): nombre="InputObject"; valor="This is a test"
+>> EnlaceDeParámetros(Out-File): nombre="InputObject"; valor="This is a second test"
+>> EnlaceDeParámetros(Out-File): nombre="InputObject"; valor="This is a third test"
+PS C:\Users\danii\Documents\Ciencia_de_datos\Tareas\Tarea01> cat combined.txt
+This is a test
+This is a second test
+This is a third test
+PS C:\Users\danii\Documents\Ciencia_de_datos\Tareas\Tarea01> cat t* >> combined.txt
+>> EnlaceDeParámetros(Out-File): nombre="InputObject"; valor="This is a test"
+>> EnlaceDeParámetros(Out-File): nombre="InputObject"; valor="This is a second test"
+>> EnlaceDeParámetros(Out-File): nombre="InputObject"; valor="This is a third test"
+PS C:\Users\danii\Documents\Ciencia_de_datos\Tareas\Tarea01> echo "Appended line" >> combined.txt
+>> EnlaceDeParámetros(Out-File): nombre="InputObject"; valor="Appended line"
+PS C:\Users\danii\Documents\Ciencia_de_datos\Tareas\Tarea01> cat combined.txt
+This is a test
+This is a second test
+This is a third test
+This is a test
+This is a second test
+This is a third test
+Appended line
+PS C:\Users\danii\Documents\Ciencia_de_datos\Tareas\Tarea01> cat t* >> combined.txt
+>> EnlaceDeParámetros(Out-File): nombre="InputObject"; valor="This is a test"
+>> EnlaceDeParámetros(Out-File): nombre="InputObject"; valor="This is a second test"
+>> EnlaceDeParámetros(Out-File): nombre="InputObject"; valor="This is a third test"
+PS C:\Users\danii\Documents\Ciencia_de_datos\Tareas\Tarea01> cat combined.txt
+This is a test
+This is a second test
+This is a third test
+This is a test
+This is a second test
+This is a third test
+Appended line
+This is a test
+This is a second test
+This is a third test
+PS C:\Users\danii\Documents\Ciencia_de_datos\Tareas\Tarea01> less combined.txt
+"combined.txt" may be a binary file.  See it anyway?
+PS C:\Users\danii\Documents\Ciencia_de_datos\Tareas\Tarea01> less combined.txt
+"combined.txt" may be a binary file.  See it anyway?
+PS C:\Users\danii\Documents\Ciencia_de_datos\Tareas\Tarea01> mv combined.txt dir1
+PS C:\Users\danii\Documents\Ciencia_de_datos\Tareas\Tarea01> cd dir1
+PS C:\Users\danii\Documents\Ciencia_de_datos\Tareas\Tarea01\dir1> ls
+
+
+    Directorio: C:\Users\danii\Documents\Ciencia_de_datos\Tareas\Tarea01\dir1
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a----        03/04/2026     13:28            398 combined.txt
+
+
+PS C:\Users\danii\Documents\Ciencia_de_datos\Tareas\Tarea01\dir1> cd ..
+PS C:\Users\danii\Documents\Ciencia_de_datos\Tareas\Tarea01> mv dir1/* .
+PS C:\Users\danii\Documents\Ciencia_de_datos\Tareas\Tarea01> mv combined.txt test* dir3 dir2
+>> ErrorTerminación(Move-Item): "No se encuentra ningún parámetro de posición que acepte el argumento 'dir3'."
+Move-Item : No se encuentra ningún parámetro de posición que acepte el argumento 'dir3'.
+En línea: 1 Carácter: 1
++ mv combined.txt test* dir3 dir2
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidArgument: (:) [Move-Item], ParameterBindingException
+    + FullyQualifiedErrorId : PositionalParameterNotFound,Microsoft.PowerShell.Commands.MoveItemCommand
+Move-Item : No se encuentra ningún parámetro de posición que acepte el argumento 'dir3'.
+En línea: 1 Carácter: 1
++ mv combined.txt test* dir3 dir2
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidArgument: (:) [Move-Item], ParameterBindingException
+    + FullyQualifiedErrorId : PositionalParameterNotFound,Microsoft.PowerShell.Commands.MoveItemCommand
+
+PS C:\Users\danii\Documents\Ciencia_de_datos\Tareas\Tarea01> mv combined.txt, test_*, dir3 dir2
+PS C:\Users\danii\Documents\Ciencia_de_datos\Tareas\Tarea01> mv dir2/* .
+PS C:\Users\danii\Documents\Ciencia_de_datos\Tareas\Tarea01> mv combined.txt, test*, dir3 dir2
+PS C:\Users\danii\Documents\Ciencia_de_datos\Tareas\Tarea01> ls
+
+
+    Directorio: C:\Users\danii\Documents\Ciencia_de_datos\Tareas\Tarea01
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----        03/04/2026     13:33                dir1
+d-----        03/04/2026     13:35                dir2
+d-----        03/04/2026     13:09                dir4
+-a----        03/04/2026     13:14           1728 output.txt
+
+
+PS C:\Users\danii\Documents\Ciencia_de_datos\Tareas\Tarea01> cd dir2
+PS C:\Users\danii\Documents\Ciencia_de_datos\Tareas\Tarea01\dir2> ld
+C:\rtools45\x86_64-w64-mingw32.static.posix\bin\ld.exe: no input files
+PS C:\Users\danii\Documents\Ciencia_de_datos\Tareas\Tarea01\dir2> ls
+
+
+    Directorio: C:\Users\danii\Documents\Ciencia_de_datos\Tareas\Tarea01\dir2
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----        03/04/2026     13:08                dir3
+-a----        03/04/2026     13:28            398 combined.txt
+-a----        03/04/2026     13:20             34 test1.txt
+-a----        03/04/2026     13:22             48 test2.txt
+-a----        03/04/2026     13:22             46 test3.txt
+
+
+PS C:\Users\danii\Documents\Ciencia_de_datos\Tareas\Tarea01\dir2> cd ..
+PS C:\Users\danii\Documents\Ciencia_de_datos\Tareas\Tarea01> ls dir2
+
+
+    Directorio: C:\Users\danii\Documents\Ciencia_de_datos\Tareas\Tarea01\dir2
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----        03/04/2026     13:08                dir3
+-a----        03/04/2026     13:28            398 combined.txt
+-a----        03/04/2026     13:20             34 test1.txt
+-a----        03/04/2026     13:22             48 test2.txt
+-a----        03/04/2026     13:22             46 test3.txt
+
+
+PS C:\Users\danii\Documents\Ciencia_de_datos\Tareas\Tarea01> mv dir2/combined.txt dir4/dir5/dir6
+PS C:\Users\danii\Documents\Ciencia_de_datos\Tareas\Tarea01> ls dir2
+
+
+    Directorio: C:\Users\danii\Documents\Ciencia_de_datos\Tareas\Tarea01\dir2
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----        03/04/2026     13:08                dir3
+-a----        03/04/2026     13:20             34 test1.txt
+-a----        03/04/2026     13:22             48 test2.txt
+-a----        03/04/2026     13:22             46 test3.txt
+
+
+PS C:\Users\danii\Documents\Ciencia_de_datos\Tareas\Tarea01> ls dir4/dir5/dir6
+
+
+    Directorio: C:\Users\danii\Documents\Ciencia_de_datos\Tareas\Tarea01\dir4\dir5\dir6
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a----        03/04/2026     13:28            398 combined.txt
+
+
+PS C:\Users\danii\Documents\Ciencia_de_datos\Tareas\Tarea01> cp dir4/dir5/dir6/combined.txt . 
+PS C:\Users\danii\Documents\Ciencia_de_datos\Tareas\Tarea01> ls dir4/dir5/dir6
+
+
+    Directorio: C:\Users\danii\Documents\Ciencia_de_datos\Tareas\Tarea01\dir4\dir5\dir6
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a----        03/04/2026     13:28            398 combined.txt
+
+
+PS C:\Users\danii\Documents\Ciencia_de_datos\Tareas\Tarea01> ls 
+
+
+    Directorio: C:\Users\danii\Documents\Ciencia_de_datos\Tareas\Tarea01
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----        03/04/2026     13:33                dir1
+d-----        03/04/2026     13:36                dir2
+d-----        03/04/2026     13:09                dir4
+-a----        03/04/2026     13:28            398 combined.txt
+-a----        03/04/2026     13:14           1728 output.txt
+
+
+PS C:\Users\danii\Documents\Ciencia_de_datos\Tareas\Tarea01> cp combined.txt backup_combined.txt
+PS C:\Users\danii\Documents\Ciencia_de_datos\Tareas\Tarea01> ls
+
+
+    Directorio: C:\Users\danii\Documents\Ciencia_de_datos\Tareas\Tarea01
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----        03/04/2026     13:33                dir1
+d-----        03/04/2026     13:36                dir2
+d-----        03/04/2026     13:09                dir4
+-a----        03/04/2026     13:28            398 backup_combined.txt
+-a----        03/04/2026     13:28            398 combined.txt
+-a----        03/04/2026     13:14           1728 output.txt
+
+
+PS C:\Users\danii\Documents\Ciencia_de_datos\Tareas\Tarea01> mv backup.combined.txt combined_backup.txt
+mv : No se encuentra la ruta de acceso 'C:\Users\danii\Documents\Ciencia_de_datos\Tareas\Tarea01\backup.combined.txt' 
+porque no existe.
+En línea: 1 Carácter: 1
++ mv backup.combined.txt combined_backup.txt
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (C:\Users\danii\...up.combined.txt:String) [Move-Item], 
+ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.MoveItemCommand
+mv : No se encuentra la ruta de acceso
+'C:\Users\danii\Documents\Ciencia_de_datos\Tareas\Tarea01\backup.combined.txt' porque no existe.
+En línea: 1 Carácter: 1
++ mv backup.combined.txt combined_backup.txt
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (C:\Users\danii\...up.combined.txt:String) [Move-Item], ItemNo
+   tFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.MoveItemCommand
+
+PS C:\Users\danii\Documents\Ciencia_de_datos\Tareas\Tarea01> mv backup_combined.txt combined_backup.txt
+PS C:\Users\danii\Documents\Ciencia_de_datos\Tareas\Tarea01> ls
+
+
+    Directorio: C:\Users\danii\Documents\Ciencia_de_datos\Tareas\Tarea01
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----        03/04/2026     13:33                dir1
+d-----        03/04/2026     13:36                dir2
+d-----        03/04/2026     13:09                dir4
+-a----        03/04/2026     13:28            398 combined.txt
+-a----        03/04/2026     13:28            398 combined_backup.txt
+-a----        03/04/2026     13:14           1728 output.txt
+
+
+PS C:\Users\danii\Documents\Ciencia_de_datos\Tareas\Tarea01> pwd
+
+Path
+----
+C:\Users\danii\Documents\Ciencia_de_datos\Tareas\Tarea01
+
+
+PS C:\Users\danii\Documents\Ciencia_de_datos\Tareas\Tarea01> rm dir4/dir5/dir6/combined.txt combined_backup.txt
+>> ErrorTerminación(Remove-Item): "No se encuentra ningún parámetro de posición que acepte el argumento 'combined_backup.txt'."
+Remove-Item : No se encuentra ningún parámetro de posición que acepte el argumento 'combined_backup.txt'.
+En línea: 1 Carácter: 1
++ rm dir4/dir5/dir6/combined.txt combined_backup.txt
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidArgument: (:) [Remove-Item], ParameterBindingException
+    + FullyQualifiedErrorId : PositionalParameterNotFound,Microsoft.PowerShell.Commands.RemoveItemCommand
+Remove-Item : No se encuentra ningún parámetro de posición que acepte el argumento 'combined_backup.txt'.
+En línea: 1 Carácter: 1
++ rm dir4/dir5/dir6/combined.txt combined_backup.txt
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidArgument: (:) [Remove-Item], ParameterBindingException
+    + FullyQualifiedErrorId : PositionalParameterNotFound,Microsoft.PowerShell.Commands.RemoveItemCommand
+
+PS C:\Users\danii\Documents\Ciencia_de_datos\Tareas\Tarea01> rm dir4/dir5/dir6/combined.txt
+PS C:\Users\danii\Documents\Ciencia_de_datos\Tareas\Tarea01> ls dir4/dir5/dir6
+PS C:\Users\danii\Documents\Ciencia_de_datos\Tareas\Tarea01> mkdir folder1
+
+
+    Directorio: C:\Users\danii\Documents\Ciencia_de_datos\Tareas\Tarea01
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----        03/04/2026     13:45                folder1
+
+
+PS C:\Users\danii\Documents\Ciencia_de_datos\Tareas\Tarea01> rm folder1
+PS C:\Users\danii\Documents\Ciencia_de_datos\Tareas\Tarea01> mkdir folder1 folder2
+>> ErrorTerminación(mkdir): "No se encuentra ningún parámetro de posición que acepte el argumento 'folder2'."
+mkdir : No se encuentra ningún parámetro de posición que acepte el argumento 'folder2'.
+En línea: 1 Carácter: 1
++ mkdir folder1 folder2
++ ~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidArgument: (:) [mkdir], ParameterBindingException
+    + FullyQualifiedErrorId : PositionalParameterNotFound,mkdir
+mkdir : No se encuentra ningún parámetro de posición que acepte el argumento 'folder2'.
+En línea: 1 Carácter: 1
++ mkdir folder1 folder2
++ ~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidArgument: (:) [mkdir], ParameterBindingException
+    + FullyQualifiedErrorId : PositionalParameterNotFound,mkdir
+
+PS C:\Users\danii\Documents\Ciencia_de_datos\Tareas\Tarea01> mkdir folder1, folder2
+
+
+    Directorio: C:\Users\danii\Documents\Ciencia_de_datos\Tareas\Tarea01
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----        03/04/2026     13:45                folder1
+d-----        03/04/2026     13:45                folder2
+
+
+PS C:\Users\danii\Documents\Ciencia_de_datos\Tareas\Tarea01> rm folder1, folder2
+PS C:\Users\danii\Documents\Ciencia_de_datos\Tareas\Tarea01> mkdir folder1, folder2
+
+
+    Directorio: C:\Users\danii\Documents\Ciencia_de_datos\Tareas\Tarea01
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----        03/04/2026     13:45                folder1
+d-----        03/04/2026     13:45                folder2
+
+
+PS C:\Users\danii\Documents\Ciencia_de_datos\Tareas\Tarea01> rmdir folder1, folder2
+PS C:\Users\danii\Documents\Ciencia_de_datos\Tareas\Tarea01> mkdir folder1, folder2
+
+
+    Directorio: C:\Users\danii\Documents\Ciencia_de_datos\Tareas\Tarea01
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----        03/04/2026     13:46                folder1
+d-----        03/04/2026     13:46                folder2
+
+
+PS C:\Users\danii\Documents\Ciencia_de_datos\Tareas\Tarea01> rmdir folder*
+PS C:\Users\danii\Documents\Ciencia_de_datos\Tareas\Tarea01> mkdir folder1/folder2
+
+
+    Directorio: C:\Users\danii\Documents\Ciencia_de_datos\Tareas\Tarea01\folder1
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----        03/04/2026     13:46                folder2
+
+
+PS C:\Users\danii\Documents\Ciencia_de_datos\Tareas\Tarea01> rmdir folder1
+Confirmar
+El elemento situado en C:\Users\danii\Documents\Ciencia_de_datos\Tareas\Tarea01\folder1 tiene elementos secundarios y no se especificó el parámetro Recurse. Si continúa, se quitarán todos los secundarios junto con el elemento. ¿Está seguro de que desea continuar?
+&Sí  Sí a t&odo  &No  No a &todo  S&uspender
+t
+PS C:\Users\danii\Documents\Ciencia_de_datos\Tareas\Tarea01> rm -r folder1
+PS C:\Users\danii\Documents\Ciencia_de_datos\Tareas\Tarea01> wc combined.tx
+/usr/bin/wc: combined.tx: No such file or directory
+PS C:\Users\danii\Documents\Ciencia_de_datos\Tareas\Tarea01> wc combined.txt
+ 10  44 398 combined.txt
+PS C:\Users\danii\Documents\Ciencia_de_datos\Tareas\Tarea01> wc -l combined.txt
+10 combined.txt
+PS C:\Users\danii\Documents\Ciencia_de_datos\Tareas\Tarea01> ls 
+
+
+    Directorio: C:\Users\danii\Documents\Ciencia_de_datos\Tareas\Tarea01
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----        03/04/2026     13:33                dir1
+d-----        03/04/2026     13:36                dir2
+d-----        03/04/2026     13:09                dir4
+-a----        03/04/2026     13:28            398 combined.txt
+-a----        03/04/2026     13:28            398 combined_backup.txt
+-a----        03/04/2026     13:14           1728 output.txt
+
+
+PS C:\Users\danii\Documents\Ciencia_de_datos\Tareas\Tarea01> wc -l combined.txt
+10 combined.txt
+PS C:\Users\danii\Documents\Ciencia_de_datos\Tareas\Tarea01> ls ~ > file_list.txt
+>> EnlaceDeParámetros(Out-File): nombre="InputObject"; valor=".cache"
+>> EnlaceDeParámetros(Out-File): nombre="InputObject"; valor=".conda"
+>> EnlaceDeParámetros(Out-File): nombre="InputObject"; valor=".continuum"
+>> EnlaceDeParámetros(Out-File): nombre="InputObject"; valor=".ipython"
+>> EnlaceDeParámetros(Out-File): nombre="InputObject"; valor=".matplotlib"
+>> EnlaceDeParámetros(Out-File): nombre="InputObject"; valor=".ms-ad"
+>> EnlaceDeParámetros(Out-File): nombre="InputObject"; valor=".openshot_qt"
+>> EnlaceDeParámetros(Out-File): nombre="InputObject"; valor=".vscode"
+>> EnlaceDeParámetros(Out-File): nombre="InputObject"; valor="3D Objects"
+>> EnlaceDeParámetros(Out-File): nombre="InputObject"; valor="ansel"
+>> EnlaceDeParámetros(Out-File): nombre="InputObject"; valor="Application Data"
+>> EnlaceDeParámetros(Out-File): nombre="InputObject"; valor="Contacts"
+>> EnlaceDeParámetros(Out-File): nombre="InputObject"; valor="Desktop"
+>> EnlaceDeParámetros(Out-File): nombre="InputObject"; valor="Documents"
+>> EnlaceDeParámetros(Out-File): nombre="InputObject"; valor="Downloads"
+>> EnlaceDeParámetros(Out-File): nombre="InputObject"; valor="Favorites"
+>> EnlaceDeParámetros(Out-File): nombre="InputObject"; valor="HP"
+>> EnlaceDeParámetros(Out-File): nombre="InputObject"; valor="Links"
+>> EnlaceDeParámetros(Out-File): nombre="InputObject"; valor="Microsoft"
+>> EnlaceDeParámetros(Out-File): nombre="InputObject"; valor="Music"
+>> EnlaceDeParámetros(Out-File): nombre="InputObject"; valor="OneDrive"
+>> EnlaceDeParámetros(Out-File): nombre="InputObject"; valor="OneDrive - Económicas - UBA"
+>> EnlaceDeParámetros(Out-File): nombre="InputObject"; valor="Pictures"
+>> EnlaceDeParámetros(Out-File): nombre="InputObject"; valor="PycharmProjects"
+>> EnlaceDeParámetros(Out-File): nombre="InputObject"; valor="Saved Games"
+>> EnlaceDeParámetros(Out-File): nombre="InputObject"; valor="Searches"
+>> EnlaceDeParámetros(Out-File): nombre="InputObject"; valor="Videos"
+>> EnlaceDeParámetros(Out-File): nombre="InputObject"; valor=".condarc"
+>> EnlaceDeParámetros(Out-File): nombre="InputObject"; valor=".lesshst"
+>> EnlaceDeParámetros(Out-File): nombre="InputObject"; valor=".python_history"
+>> EnlaceDeParámetros(Out-File): nombre="InputObject"; valor="CursoDos_1.py"
+PS C:\Users\danii\Documents\Ciencia_de_datos\Tareas\Tarea01> wc -l file_list.txt
+40 file_list.txt
+PS C:\Users\danii\Documents\Ciencia_de_datos\Tareas\Tarea01> rm file_list.txt
+PS C:\Users\danii\Documents\Ciencia_de_datos\Tareas\Tarea01> ls ~ | wc -l
+40
+PS C:\Users\danii\Documents\Ciencia_de_datos\Tareas\Tarea01> cat combined.txt | uniq | wc -l
+10
+PS C:\Users\danii\Documents\Ciencia_de_datos\Tareas\Tarea01> cat combined.txt
+This is a test
+This is a second test
+This is a third test
+This is a test
+This is a second test
+This is a third test
+Appended line
+This is a test
+This is a second test
+This is a third test
+PS C:\Users\danii\Documents\Ciencia_de_datos\Tareas\Tarea01> cat combined.txt | uniq | less
+
+PS C:\Users\danii\Documents\Ciencia_de_datos\Tareas\Tarea01> man uniq
+
+NOMBRE
+    Get-Unique
+
+SINTAXIS
+    Get-Unique  [<CommonParameters>]
+
+    Get-Unique  [<CommonParameters>]
+
+
+ALIAS
+    gu
+
+
+NOTAS
+    Get-Help no encuentra los archivos de Ayuda para este cmdlet en el equipo. Mostrará solo una parte de la
+    Ayuda.
+        -- Para descargar e instalar los archivos de Ayuda para el módulo que incluye este cmdlet, use
+    Update-Help.
+        -- Para ver en línea el tema de Ayuda de este cmdlet, escriba "Get-Help Get-Unique -Online" o
+           vaya a https://go.microsoft.com/fwlink/?LinkID=113335.
+PS C:\Users\danii\Documents\Ciencia_de_datos\Tareas\Tarea01> sort combined.txt
+PS C:\Users\danii\Documents\Ciencia_de_datos\Tareas\Tarea01> sort combined.txt | uniq | wc -l
+0
+PS C:\Users\danii\Documents\Ciencia_de_datos\Tareas\Tarea01> sort combines.txt | less
+
+PS C:\Users\danii\Documents\Ciencia_de_datos\Tareas\Tarea01> Stop-Transcript
+**********************
+Fin de la transcripción de Windows PowerShell
+Hora de finalización: 20260403140315
+**********************
